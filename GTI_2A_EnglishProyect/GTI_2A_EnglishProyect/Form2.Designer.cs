@@ -59,11 +59,18 @@ namespace GTI_2A_EnglishProyect
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBoxManofacturer = new System.Windows.Forms.TextBox();
+            this.textBoxPlatform = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxStock = new System.Windows.Forms.TextBox();
+            this.textBoxPriece = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -237,6 +244,11 @@ namespace GTI_2A_EnglishProyect
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxPriece);
+            this.groupBox2.Controls.Add(this.textBoxStock);
+            this.groupBox2.Controls.Add(this.textBoxName);
+            this.groupBox2.Controls.Add(this.textBoxPlatform);
+            this.groupBox2.Controls.Add(this.textBoxManofacturer);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
@@ -323,11 +335,54 @@ namespace GTI_2A_EnglishProyect
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBoxDescription);
             this.groupBox3.Location = new System.Drawing.Point(424, 116);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(357, 162);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
+            // 
+            // textBoxManofacturer
+            // 
+            this.textBoxManofacturer.Location = new System.Drawing.Point(130, 155);
+            this.textBoxManofacturer.Name = "textBoxManofacturer";
+            this.textBoxManofacturer.Size = new System.Drawing.Size(257, 20);
+            this.textBoxManofacturer.TabIndex = 8;
+            // 
+            // textBoxPlatform
+            // 
+            this.textBoxPlatform.Location = new System.Drawing.Point(130, 118);
+            this.textBoxPlatform.Name = "textBoxPlatform";
+            this.textBoxPlatform.Size = new System.Drawing.Size(257, 20);
+            this.textBoxPlatform.TabIndex = 9;
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(130, 77);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(257, 20);
+            this.textBoxName.TabIndex = 10;
+            // 
+            // textBoxStock
+            // 
+            this.textBoxStock.Location = new System.Drawing.Point(130, 193);
+            this.textBoxStock.Name = "textBoxStock";
+            this.textBoxStock.Size = new System.Drawing.Size(257, 20);
+            this.textBoxStock.TabIndex = 11;
+            // 
+            // textBoxPriece
+            // 
+            this.textBoxPriece.Location = new System.Drawing.Point(130, 258);
+            this.textBoxPriece.Name = "textBoxPriece";
+            this.textBoxPriece.Size = new System.Drawing.Size(257, 20);
+            this.textBoxPriece.TabIndex = 12;
+            // 
+            // textBoxDescription
+            // 
+            this.textBoxDescription.Location = new System.Drawing.Point(6, 19);
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(345, 20);
+            this.textBoxDescription.TabIndex = 0;
             // 
             // Form2
             // 
@@ -348,6 +403,8 @@ namespace GTI_2A_EnglishProyect
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +441,11 @@ namespace GTI_2A_EnglishProyect
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBoxPriece;
+        private System.Windows.Forms.TextBox textBoxStock;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxPlatform;
+        private System.Windows.Forms.TextBox textBoxManofacturer;
+        private System.Windows.Forms.TextBox textBoxDescription;
     }
 }
