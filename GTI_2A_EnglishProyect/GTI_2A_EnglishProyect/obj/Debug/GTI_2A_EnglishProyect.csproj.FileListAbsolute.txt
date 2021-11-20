@@ -9,3 +9,15 @@ C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Sem
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.pdb
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form1.resources
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form2.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\GTI_2A_EnglishProyect.exe.config
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\GTI_2A_EnglishProyect.exe
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\GTI_2A_EnglishProyect.pdb
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.AssemblyReference.cache
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form1.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form2.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form3.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Properties.Resources.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.GenerateResource.cache
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.CoreCompileInputs.cache
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.exe
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.pdb

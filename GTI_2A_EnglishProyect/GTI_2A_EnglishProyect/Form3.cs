@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace GTI_2A_EnglishProyect
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Form3 window2 = new Form3();
-            window2.ShowDialog(this);
+
         }
     }
 }

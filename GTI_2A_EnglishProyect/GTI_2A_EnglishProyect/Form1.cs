@@ -61,5 +61,10 @@ namespace GTI_2A_EnglishProyect
 
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
