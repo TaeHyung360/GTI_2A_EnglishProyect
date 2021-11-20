@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GTI_2A_EnglishProyect
 {
@@ -50,6 +52,35 @@ namespace GTI_2A_EnglishProyect
         public static string generateNewID()
         {
             return Guid.NewGuid().ToString();
+        }
+        //===============================================================================================================================================
+        // ReadFile
+        //===============================================================================================================================================
+        public static String readFile(String nameFile)
+        {
+            String line;// used to read from the file
+            StringBuilder sb = new StringBuilder();// where the text read it are going to be stored
+
+
+            using (FileStream fs = File.Open(nameFile, FileMode.Open, FileAccess.Read))
+            {
+                using (StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("utf-8")))
+                {
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        sb.AppendLine(line);
+                    }
+                }
+            }
+            return sb.ToString();
+        }
+        //===============================================================================================================================================
+        // MessageBox
+        //===============================================================================================================================================
+        public static void dialogError(String title, String message)
+        {
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
 
     }
