@@ -16,5 +16,6 @@ namespace GTI_2A_EnglishProyect
         {
             InitializeComponent();
         }
+
     }
 }
