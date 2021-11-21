@@ -242,6 +242,7 @@ namespace GTI_2A_EnglishProyect
             this.deleteProduct.TabIndex = 7;
             this.deleteProduct.Text = "Delete";
             this.deleteProduct.UseVisualStyleBackColor = true;
+            this.deleteProduct.Click += new System.EventHandler(this.deleteProduct_Click);
             // 
             // editProduct
             // 

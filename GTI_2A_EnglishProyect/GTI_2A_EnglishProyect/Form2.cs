@@ -73,6 +73,19 @@ namespace GTI_2A_EnglishProyect
             Product item = (Product)listOfProducts.SelectedItem;
             itemToInfoGroup(item);
         }
+        private void clearFormProduct()
+        {
+            textBoxName.Text = "";
+            textBoxManofacturer.Text = "";
+            textBoxDescription.Text = "";
+            textBoxPriece.Text = "";
+            textBoxStock.Text = "";
+            textBoxPlatform.Text = "";
+            
+
+
+
+        }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
         {
@@ -95,6 +108,36 @@ namespace GTI_2A_EnglishProyect
                 textBoxPlatform.Text = item.PLATFORM;
             }
 
+        }
+        private void removeProduct(Product product)
+        {
+            productList.product.Remove(product);
+            string jsonData = JsonConvert.SerializeObject(productList);
+            File.WriteAllText(mainFileOfProducts, jsonData);
+            listOfProducts.Items.Remove(product);
+            clearFormProduct();
+           // groupBoxNoProductSelected.Visible = true;
+        }
+
+        private void deleteProduct_Click(object sender, EventArgs e)
+        {
+            if (listOfProducts.SelectedItem != null)
+            {
+                DialogResult result = MessageBox.Show("Do you want to delete the file?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    Product item = (Product)listOfProducts.SelectedItem;
+
+                    removeProduct(item);
+                }
+                /* else if (result == DialogResult.No)
+                 {
+                 }*/
+            }
+            else
+            {
+                MessageBox.Show("Warning", "You must select a product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 
