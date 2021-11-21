@@ -25,3 +25,6 @@ C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Sem
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\Newtonsoft.Json.dll
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\Newtonsoft.Json.xml
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.CopyComplete
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.CopyComplete

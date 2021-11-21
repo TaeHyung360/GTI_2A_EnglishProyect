@@ -44,7 +44,8 @@ namespace GTI_2A_EnglishProyect
                 foreach (Product product in productList.product)
                 {
                     listOfProducts.Items.Add(product); // podemos añadir directamente los objetos porque hemos sobreescrito
-                                                        // el metodo to string del objeto que es lo que se muestra en la lista
+                                                      // el metodo to string del objeto que es lo que se muestra en la lista
+
 
                 }
             }
@@ -64,6 +65,35 @@ namespace GTI_2A_EnglishProyect
                 this.Close();
             }
 
+
+        }
+
+        private void listOfProducts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Product item = (Product)listOfProducts.SelectedItem;
+            itemToInfoGroup(item);
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+            
+        
+
+
+        }
+        private void itemToInfoGroup(Product item)
+        {
+
+            if (item != null)
+            {
+                listOfProducts.Visible = true;
+                textBoxName.Text = item.NAME;
+                textBoxManofacturer.Text = item.MANUFACTURER;
+                textBoxDescription.Text = item.DESCRIPTION;
+                textBoxPriece.Text = item.PRICE;
+                textBoxStock.Text = item.STOCK;
+                textBoxPlatform.Text = item.PLATFORM;
+            }
 
         }
     }
