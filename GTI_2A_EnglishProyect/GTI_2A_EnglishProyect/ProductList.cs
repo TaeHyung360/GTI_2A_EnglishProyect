@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GTI_2A_EnglishProyect
 {
-    class ProductList
+    public class ProductList
     {
         //con la lista de productos pasar directamente desde json a una matriz de objetos
 

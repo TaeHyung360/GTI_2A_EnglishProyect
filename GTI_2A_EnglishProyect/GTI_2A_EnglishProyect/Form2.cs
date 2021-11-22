@@ -15,20 +15,38 @@ namespace GTI_2A_EnglishProyect
     public partial class Form2 : Form
     {
 
-        private ProductList productList;
+        public ProductList productList;
         // El path directory name pilla la ruta del .exe que esta donde el directory data
         private readonly string mainFileOfProducts = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName) + @"\data\dataProducts.json";
+        public static Product productEditable = null;
 
         public Form2()
         {
             InitializeComponent();
             initListBoxListOfProducts();
         }
-
+        //===========================================================================================================
+        //Open about
+        //===========================================================================================================
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 window2 = new Form3();
             window2.ShowDialog(this);
+        }
+        //===========================================================================================================
+        //Open add product
+        //===========================================================================================================
+        private void createNewProduct_Click(object sender, EventArgs e)
+        {
+            Form4 createWindow = new Form4();
+            createWindow.ShowDialog(this);
+            if (productEditable!=null)
+            {
+                productList.product.Add(productEditable);
+                string jsonData = JsonConvert.SerializeObject(productList);
+                File.WriteAllText(mainFileOfProducts, jsonData);
+                listOfProducts.Items.Add(productEditable);
+            }
         }
         //===========================================================================================================
         //initListBoxListOfProducts()
@@ -124,9 +142,43 @@ namespace GTI_2A_EnglishProyect
 
                     removeGamefromJson(item);
                 }
-                /* else if (result == DialogResult.No)
-                 {
-                 }*/
+               
+            }
+            else
+            {
+                MessageBox.Show("Warning", "You must select a product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        //===========================================================================================================
+        //add
+        //===========================================================================================================
+        private void editProduct_Click(object sender, EventArgs e)
+        {
+            if (listOfProducts.SelectedItem != null)
+            {
+                String item = listOfProducts.SelectedItem.ToString();
+
+                int i;
+
+                for (i = 0; i < productList.product.Count; i++)
+                {
+                    if(item == productList.product[i].NAME)
+                    {
+                        productEditable = productList.product[i];
+                        break;
+                    }
+
+                }
+                Form5 createWindow = new Form5();
+                createWindow.ShowDialog(this);
+                if (productEditable != null)
+                {
+                    productList.product[i] = productEditable;
+                    string jsonData = JsonConvert.SerializeObject(productList);
+                    File.WriteAllText(mainFileOfProducts, jsonData);
+                    listOfProducts.Items[i] = productEditable;
+                }
+                productEditable = null;
             }
             else
             {

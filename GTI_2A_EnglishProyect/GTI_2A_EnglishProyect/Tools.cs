@@ -37,13 +37,14 @@ namespace GTI_2A_EnglishProyect
         public static string offCapitalsLetters(String inputText)
         {
             inputText = inputText.ToLower();
-            if (inputText.Length == 0)
+            String finalText = char.ToUpper(inputText[0]) + inputText.Substring(1);
+            if (finalText.Length == 0)
             {
                 return "";
             }
             else
             {
-                return inputText;
+                return finalText;
             }
 
 

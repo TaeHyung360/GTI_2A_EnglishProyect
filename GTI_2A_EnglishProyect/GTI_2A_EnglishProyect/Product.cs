@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GTI_2A_EnglishProyect
 {
-    class Product
+    public class Product
     {
         //===============================================================================================================================================
         // Atributos de la clase
@@ -38,7 +38,7 @@ namespace GTI_2A_EnglishProyect
                 }
                 else
                 {
-                    throw new ArgumentException("ID can not be empty");
+                    throw new ArgumentException("ID cannot be empty");
                 }
             }
         }
@@ -54,13 +54,15 @@ namespace GTI_2A_EnglishProyect
             {
                 Console.WriteLine(value);
 
+                value = value.Trim(" ".ToCharArray());
+
                 if (!Tools.emptyText(value))
                 {
                     name = Tools.offCapitalsLetters(value);
                 }
                 else
                 {
-                    throw new ArgumentException("Name can not be empty");
+                    throw new ArgumentException("Name cannot be empty");
                 }
 
             }
@@ -77,13 +79,15 @@ namespace GTI_2A_EnglishProyect
             {
                 Console.WriteLine(value);
 
+                value = value.Trim(" ".ToCharArray());
+
                 if (validPlatfom(value))
                 {
-                    platform = value.ToLower();
+                    platform = Tools.offCapitalsLetters(value);
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid type of product");
+                    throw new ArgumentException("Invalid platform");
 
                 }
 
@@ -101,13 +105,15 @@ namespace GTI_2A_EnglishProyect
             {
                 Console.WriteLine(value);
 
+                value = value.Trim(" ".ToCharArray());
+
                 if (!Tools.emptyText(value))
                 {
                     manufacturer = Tools.offCapitalsLetters(value);
                 }
                 else
                 {
-                    throw new ArgumentException("Manufacturer can not be empty");
+                    throw new ArgumentException("Manufacturer cannot be empty");
                 }
 
             }
@@ -123,6 +129,7 @@ namespace GTI_2A_EnglishProyect
             set
             {
                 Console.WriteLine(value);
+                value = value.Trim(" ".ToCharArray());
                 description = Tools.offCapitalsLetters(value);
             }
         }
@@ -137,6 +144,8 @@ namespace GTI_2A_EnglishProyect
             set
             {
                 Console.WriteLine(value);
+
+                value = value.Trim(" ".ToCharArray());
 
                 if (inpuntPositiveDecimal(value))
                 {
@@ -156,6 +165,8 @@ namespace GTI_2A_EnglishProyect
             set
             {
                 Console.WriteLine(value);
+
+                value = value.Trim(" ".ToCharArray());
 
                 // solo números enteros positivos
 
@@ -193,14 +204,8 @@ namespace GTI_2A_EnglishProyect
         //===============================================================================================================================================
         private bool inpuntPositiveDecimal(string number)
         {
-
-            Match matchInteger = Regex.Match(number, @"^[0-9]\d*$");
-            // poner 12 de precio tambien es valido
-            if (matchInteger.Success)
-            {
-                return true;
-            }
             Match matchDecimal = Regex.Match(number, @"^[0-9]\d*.\d*$");
+
             if (matchDecimal.Success)
             {
                 return true;

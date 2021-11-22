@@ -1,7 +1,1 @@
-
-{"product":[{"ID":"d23c0daa-e007-4691-8e29-dfd5a3afdcab",
-    "NAME":"halo infinite",
-    "PLATFORM":"xbox",
-    "MANUFACTURER":"Microsoft",
-    "DESCRIPTION":"Halo Infinite es un videojuego de disparos en primera persona próximo a estrenarse de la franquicia de videojuegos de ciencia ficción creada por Bungie Studios y actualmente desarrollada por 343 Industries. Será exclusivo para las plataformas Xbox One, Microsoft Windows y Xbox Series X|S.",
-    "PRICE":"59,99","STOCK":"1000"}]}
+{"product":[{"ID":"28acac87-1cce-4d28-b56c-88057d13ca40","NAME":"Halo infinite","PLATFORM":"Xbox","MANUFACTURER":"Microsoft","DESCRIPTION":"Halo infinite es un videojuego de disparos en primera persona próximo a estrenarse de la franquicia de videojuegos de ciencia ficción creada por bungie studios y actualmente desarrollada por 343 industries. será exclusivo para las plataformas xbox one, microsoft windows y xbox series x|s.","PRICE":"59,99","STOCK":"1000"}]}
