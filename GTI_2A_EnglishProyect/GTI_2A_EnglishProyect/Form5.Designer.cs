@@ -151,9 +151,9 @@ namespace GTI_2A_EnglishProyect
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(11, 256);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 22);
+            this.label8.Size = new System.Drawing.Size(51, 22);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Priece";
+            this.label8.Text = "Price";
             // 
             // label7
             // 
@@ -183,7 +183,7 @@ namespace GTI_2A_EnglishProyect
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 22);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Manofacturer";
+            this.label5.Text = "Manufacturer";
             // 
             // label4
             // 
@@ -211,9 +211,9 @@ namespace GTI_2A_EnglishProyect
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(270, 39);
+            this.label2.Size = new System.Drawing.Size(198, 39);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Edit new product";
+            this.label2.Text = "Edit product";
             // 
             // Form5
             // 

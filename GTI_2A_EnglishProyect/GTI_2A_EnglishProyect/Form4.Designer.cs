@@ -30,6 +30,8 @@ namespace GTI_2A_EnglishProyect
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBoxPriece = new System.Windows.Forms.TextBox();
             this.textBoxStock = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@ namespace GTI_2A_EnglishProyect
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,26 @@ namespace GTI_2A_EnglishProyect
             this.groupBox2.Size = new System.Drawing.Size(796, 300);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Location = new System.Drawing.Point(647, 28);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(134, 28);
+            this.buttonCancel.TabIndex = 14;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(507, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 28);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxPriece
             // 
@@ -131,9 +151,9 @@ namespace GTI_2A_EnglishProyect
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(11, 256);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 22);
+            this.label8.Size = new System.Drawing.Size(51, 22);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Priece";
+            this.label8.Text = "Price";
             // 
             // label7
             // 
@@ -163,7 +183,7 @@ namespace GTI_2A_EnglishProyect
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 22);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Manofacturer";
+            this.label5.Text = "Manufacturer";
             // 
             // label4
             // 
@@ -194,26 +214,6 @@ namespace GTI_2A_EnglishProyect
             this.label2.Size = new System.Drawing.Size(313, 39);
             this.label2.TabIndex = 0;
             this.label2.Text = "Create new product";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(507, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 28);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // buttonCancel
-            // 
-            this.buttonCancel.Location = new System.Drawing.Point(647, 28);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(134, 28);
-            this.buttonCancel.TabIndex = 14;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // Form4
             // 
