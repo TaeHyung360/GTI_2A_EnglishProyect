@@ -68,12 +68,12 @@ namespace GTI_2A_EnglishProyect
         private void listOfProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
             Product item = (Product)listOfProducts.SelectedItem;
-            itemToInfoGroup(item);
+            itemTotexBox(item);
         }
         //===========================================================================================================
         //clearFormProduct()
         //===========================================================================================================
-        private void clearFormProduct()
+        private void cleardataFromtextBox()
         {
             textBoxName.Text = "";
             textBoxManofacturer.Text = "";
@@ -85,7 +85,7 @@ namespace GTI_2A_EnglishProyect
         //===========================================================================================================
         //itemToInfoGroup()
         //===========================================================================================================
-        private void itemToInfoGroup(Product item)
+        private void itemTotexBox(Product item)
         {
             if (item != null)
             {
@@ -101,13 +101,13 @@ namespace GTI_2A_EnglishProyect
         //===========================================================================================================
         //removeProduct
         //===========================================================================================================
-        private void removeProduct(Product product)
+        private void removeGamefromJson(Product product)
         {
             productList.product.Remove(product);
             string jsonData = JsonConvert.SerializeObject(productList);
             File.WriteAllText(mainFileOfProducts, jsonData);
             listOfProducts.Items.Remove(product);
-            clearFormProduct();
+            cleardataFromtextBox();
            // groupBoxNoProductSelected.Visible = true;
         }
         //===========================================================================================================
@@ -122,7 +122,7 @@ namespace GTI_2A_EnglishProyect
                 {
                     Product item = (Product)listOfProducts.SelectedItem;
 
-                    removeProduct(item);
+                    removeGamefromJson(item);
                 }
                 /* else if (result == DialogResult.No)
                  {
