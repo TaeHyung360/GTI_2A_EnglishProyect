@@ -300,7 +300,6 @@ namespace GTI_2A_EnglishProyect
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(384, 26);
             this.textBoxName.TabIndex = 10;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // textBoxPlatform
             // 

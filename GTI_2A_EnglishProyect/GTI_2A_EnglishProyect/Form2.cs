@@ -15,8 +15,6 @@ namespace GTI_2A_EnglishProyect
     public partial class Form2 : Form
     {
 
-        private bool editMode = false;
-
         private ProductList productList;
         // El path directory name pilla la ruta del .exe que esta donde el directory data
         private readonly string mainFileOfProducts = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName) + @"\data\dataProducts.json";
@@ -33,8 +31,9 @@ namespace GTI_2A_EnglishProyect
             window2.ShowDialog(this);
         }
         //===========================================================================================================
-        private void initListBoxListOfProducts()
+        //initListBoxListOfProducts()
         //===========================================================================================================
+        private void initListBoxListOfProducts()
         {
             try
             {
@@ -45,8 +44,6 @@ namespace GTI_2A_EnglishProyect
                 {
                     listOfProducts.Items.Add(product); // podemos añadir directamente los objetos porque hemos sobreescrito
                                                       // el metodo to string del objeto que es lo que se muestra en la lista
-
-
                 }
             }
             catch (IOException)
@@ -64,15 +61,18 @@ namespace GTI_2A_EnglishProyect
                 Tools.dialogError("ERROR", "Unexpected error");
                 this.Close();
             }
-
-
         }
-
+        //===========================================================================================================
+        //listOfProducts_SelectedIndexChanged()
+        //===========================================================================================================
         private void listOfProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
             Product item = (Product)listOfProducts.SelectedItem;
             itemToInfoGroup(item);
         }
+        //===========================================================================================================
+        //clearFormProduct()
+        //===========================================================================================================
         private void clearFormProduct()
         {
             textBoxName.Text = "";
@@ -81,22 +81,12 @@ namespace GTI_2A_EnglishProyect
             textBoxPriece.Text = "";
             textBoxStock.Text = "";
             textBoxPlatform.Text = "";
-            
-
-
-
         }
-
-        private void textBoxName_TextChanged(object sender, EventArgs e)
-        {
-            
-        
-
-
-        }
+        //===========================================================================================================
+        //itemToInfoGroup()
+        //===========================================================================================================
         private void itemToInfoGroup(Product item)
         {
-
             if (item != null)
             {
                 listOfProducts.Visible = true;
@@ -107,8 +97,10 @@ namespace GTI_2A_EnglishProyect
                 textBoxStock.Text = item.STOCK;
                 textBoxPlatform.Text = item.PLATFORM;
             }
-
         }
+        //===========================================================================================================
+        //removeProduct
+        //===========================================================================================================
         private void removeProduct(Product product)
         {
             productList.product.Remove(product);
@@ -118,7 +110,9 @@ namespace GTI_2A_EnglishProyect
             clearFormProduct();
            // groupBoxNoProductSelected.Visible = true;
         }
-
+        //===========================================================================================================
+        //deleteProduct_Click
+        //===========================================================================================================
         private void deleteProduct_Click(object sender, EventArgs e)
         {
             if (listOfProducts.SelectedItem != null)
