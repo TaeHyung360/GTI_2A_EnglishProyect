@@ -30,3 +30,6 @@ C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_
 C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.csproj.CopyComplete
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form4.resources
 C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Semestre A\COMPUTER SCIENCE\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form5.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form4.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form5.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form6.resources

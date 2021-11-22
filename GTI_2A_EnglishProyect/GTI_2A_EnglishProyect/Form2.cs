@@ -40,7 +40,7 @@ namespace GTI_2A_EnglishProyect
         {
             Form4 createWindow = new Form4();
             createWindow.ShowDialog(this);
-            if (productEditable!=null)
+            if (productEditable != null)
             {
                 productList.product.Add(productEditable);
                 string jsonData = JsonConvert.SerializeObject(productList);
@@ -61,7 +61,7 @@ namespace GTI_2A_EnglishProyect
                 foreach (Product product in productList.product)
                 {
                     listOfProducts.Items.Add(product); // podemos añadir directamente los objetos porque hemos sobreescrito
-                                                      // el metodo to string del objeto que es lo que se muestra en la lista
+                                                       // el metodo to string del objeto que es lo que se muestra en la lista
                 }
             }
             catch (IOException)
@@ -141,7 +141,7 @@ namespace GTI_2A_EnglishProyect
 
                     removeGameFromJson(item);
                 }
-               
+
             }
             else
             {
@@ -161,7 +161,7 @@ namespace GTI_2A_EnglishProyect
 
                 for (i = 0; i < productList.product.Count; i++)
                 {
-                    if(item == productList.product[i].NAME)
+                    if (item == productList.product[i].NAME)
                     {
                         productEditable = productList.product[i];
                         break;
@@ -184,6 +184,33 @@ namespace GTI_2A_EnglishProyect
                 MessageBox.Show("You must select a product", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-    }
 
+        private void applyDiscountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 applyDiscount = new Form6();
+
+            applyDiscount.ShowDialog(this);
+        }
+        public void GlobalDiscount(double discount)
+        {
+
+            foreach (Product product in productList.product)
+            {
+
+                double price = Convert.ToDouble(product.PRICE);
+                double discountValue = (price * discount) / 100;
+                double finalPrice = price - discountValue;
+
+                product.PRICE = finalPrice.ToString();
+                listOfProducts.Items.Remove(product);
+
+            }
+            clearDataFromTextBox();
+            string jsonData = JsonConvert.SerializeObject(productList);
+            File.WriteAllText(mainFileOfProducts, jsonData);
+            initListBoxListOfProducts();
+        }
+    }
 }
+
+
