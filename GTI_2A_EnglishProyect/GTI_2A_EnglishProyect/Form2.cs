@@ -145,7 +145,7 @@ namespace GTI_2A_EnglishProyect
             }
             else
             {
-                MessageBox.Show("Warning", "You must select a product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You must select a product", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //===========================================================================================================
@@ -181,7 +181,7 @@ namespace GTI_2A_EnglishProyect
             }
             else
             {
-                MessageBox.Show("Warning", "You must select a product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You must select a product", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
