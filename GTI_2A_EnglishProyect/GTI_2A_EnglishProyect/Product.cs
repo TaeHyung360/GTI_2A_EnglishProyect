@@ -129,8 +129,17 @@ namespace GTI_2A_EnglishProyect
             set
             {
                 Console.WriteLine(value);
+
                 value = value.Trim(" ".ToCharArray());
-                description = Tools.offCapitalsLetters(value);
+                if (value=="")
+                {
+                    description = " ";
+                }
+                else
+                {
+                    description = Tools.offCapitalsLetters(value);
+                }
+
             }
         }
         //===============================================================================================================================================
