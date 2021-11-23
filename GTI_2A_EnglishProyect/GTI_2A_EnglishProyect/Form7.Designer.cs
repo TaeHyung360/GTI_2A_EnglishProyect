@@ -35,6 +35,7 @@ namespace GTI_2A_EnglishProyect
             this.label1 = new System.Windows.Forms.Label();
             this.dataXML = new System.Windows.Forms.RadioButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.dataCSV = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // textBoxPreview
@@ -89,11 +90,24 @@ namespace GTI_2A_EnglishProyect
             this.dataXML.UseVisualStyleBackColor = true;
             this.dataXML.CheckedChanged += new System.EventHandler(this.dataXML_CheckedChanged);
             // 
+            // dataCSV
+            // 
+            this.dataCSV.AutoSize = true;
+            this.dataCSV.Location = new System.Drawing.Point(145, 399);
+            this.dataCSV.Name = "dataCSV";
+            this.dataCSV.Size = new System.Drawing.Size(121, 24);
+            this.dataCSV.TabIndex = 5;
+            this.dataCSV.TabStop = true;
+            this.dataCSV.Text = "data to CSV";
+            this.dataCSV.UseVisualStyleBackColor = true;
+            this.dataCSV.CheckedChanged += new System.EventHandler(this.dataCSV_CheckedChanged);
+            // 
             // exportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataCSV);
             this.Controls.Add(this.dataXML);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonClose);
@@ -114,5 +128,6 @@ namespace GTI_2A_EnglishProyect
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton dataXML;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.RadioButton dataCSV;
     }
 }

@@ -33,7 +33,7 @@ namespace GTI_2A_EnglishProyect
 
         private void textBoxPreview_TextChanged(object sender, EventArgs e)
         {
-
+            textBoxPreview.ScrollBars = ScrollBars.Vertical;
         }
 
         private void buttonAccept_Click(object sender, EventArgs e)
@@ -43,6 +43,22 @@ namespace GTI_2A_EnglishProyect
                  if (dataXML.Checked)
                 {
                     saveFileDialog1.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+                    saveFileDialog1.FilterIndex = 1;
+                    saveFileDialog1.AddExtension = true;
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+
+                        string text = saveFileDialog1.FileName;
+                        StreamWriter saveText = File.CreateText(text);
+                        saveText.Write(textBoxPreview.Text);
+                        saveText.Close();
+                        this.Close();
+
+                    }
+                }
+                else if (dataCSV.Checked)
+                {
+                    saveFileDialog1.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
                     saveFileDialog1.FilterIndex = 1;
                     saveFileDialog1.AddExtension = true;
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -81,6 +97,29 @@ namespace GTI_2A_EnglishProyect
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataCSV_CheckedChanged(object sender, EventArgs e)
+        {
+            StringBuilder write = new StringBuilder();
+            foreach (Product product in productList.product)
+            {
+                write.AppendLine("Id: " + product.ID);
+                write.AppendLine("Name: " + product.NAME);
+                write.AppendLine("Plataform: " + product.PLATFORM);
+                write.AppendLine("Manufacturer: " + product.MANUFACTURER);
+                write.AppendLine("Stock: " + product.STOCK);
+                write.AppendLine("Price (€): " + product.PRICE);
+                write.AppendLine("Description: " + product.DESCRIPTION);
+                write.AppendLine();
+            }
+
+            textBoxPreview.Text = write.ToString();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
         }
     }
 }
