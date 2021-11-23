@@ -33,3 +33,4 @@ C:\Users\tosty\Documents\UPV\Curso 2021-2022\English for software developers\Sem
 C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form4.resources
 C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form5.resources
 C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.Form6.resources
+C:\Users\vigar\Documents\GitHub\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\GTI_2A_EnglishProyect\obj\Debug\GTI_2A_EnglishProyect.exportForm.resources

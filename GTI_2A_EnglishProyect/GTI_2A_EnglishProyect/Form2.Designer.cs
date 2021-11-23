@@ -143,6 +143,7 @@ namespace GTI_2A_EnglishProyect
             this.exportsToolStripMenuItem.Name = "exportsToolStripMenuItem";
             this.exportsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exportsToolStripMenuItem.Text = "Export data";
+            this.exportsToolStripMenuItem.Click += new System.EventHandler(this.exportsToolStripMenuItem_Click);
             // 
             // exportToToolStripMenuItem
             // 

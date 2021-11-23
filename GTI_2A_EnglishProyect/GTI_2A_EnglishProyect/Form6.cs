@@ -50,7 +50,7 @@ namespace GTI_2A_EnglishProyect
                         {
                             Form2 main = (Form2)this.Owner;
                             this.Hide();
-                            main.GlobalDiscount(discount);
+                            main.globalDiscount(discount);
                             this.Close();
                         }
 

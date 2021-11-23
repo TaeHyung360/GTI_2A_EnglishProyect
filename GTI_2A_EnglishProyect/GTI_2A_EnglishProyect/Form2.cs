@@ -191,24 +191,29 @@ namespace GTI_2A_EnglishProyect
 
             applyDiscount.ShowDialog(this);
         }
-        public void GlobalDiscount(double discount)
+        public void globalDiscount(double discount)
         {
 
             foreach (Product product in productList.product)
             {
 
                 double price = Convert.ToDouble(product.PRICE);
-                double discountValue = (price * discount) / 100;
-                double finalPrice = price - discountValue;
+                double discountApplied = (price * discount) / 100;
+                double priceWithDiscount = price - discountApplied;
 
-                product.PRICE = finalPrice.ToString();
+                product.PRICE = priceWithDiscount.ToString();
                 listOfProducts.Items.Remove(product);
-
             }
             clearDataFromTextBox();
             string jsonData = JsonConvert.SerializeObject(productList);
             File.WriteAllText(mainFileOfProducts, jsonData);
             initListBoxListOfProducts();
+        }
+
+        private void exportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exportForm exportFileWindows = new exportForm();
+            exportFileWindows.ShowDialog();
         }
     }
 }
