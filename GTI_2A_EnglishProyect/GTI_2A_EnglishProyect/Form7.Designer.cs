@@ -41,7 +41,7 @@ namespace GTI_2A_EnglishProyect
             // textBoxPreview
             // 
             this.textBoxPreview.Location = new System.Drawing.Point(8, 35);
-            this.textBoxPreview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPreview.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPreview.Multiline = true;
             this.textBoxPreview.Name = "textBoxPreview";
             this.textBoxPreview.Size = new System.Drawing.Size(519, 211);
@@ -51,7 +51,7 @@ namespace GTI_2A_EnglishProyect
             // buttonAccept
             // 
             this.buttonAccept.Location = new System.Drawing.Point(347, 257);
-            this.buttonAccept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAccept.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAccept.Name = "buttonAccept";
             this.buttonAccept.Size = new System.Drawing.Size(88, 23);
             this.buttonAccept.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace GTI_2A_EnglishProyect
             // buttonClose
             // 
             this.buttonClose.Location = new System.Drawing.Point(439, 257);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(88, 23);
             this.buttonClose.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace GTI_2A_EnglishProyect
             // 
             this.dataXML.AutoSize = true;
             this.dataXML.Location = new System.Drawing.Point(11, 260);
-            this.dataXML.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataXML.Margin = new System.Windows.Forms.Padding(2);
             this.dataXML.Name = "dataXML";
             this.dataXML.Size = new System.Drawing.Size(83, 17);
             this.dataXML.TabIndex = 4;
@@ -98,7 +98,7 @@ namespace GTI_2A_EnglishProyect
             // 
             this.dataCSV.AutoSize = true;
             this.dataCSV.Location = new System.Drawing.Point(97, 259);
-            this.dataCSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataCSV.Margin = new System.Windows.Forms.Padding(2);
             this.dataCSV.Name = "dataCSV";
             this.dataCSV.Size = new System.Drawing.Size(82, 17);
             this.dataCSV.TabIndex = 5;
@@ -118,9 +118,9 @@ namespace GTI_2A_EnglishProyect
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.textBoxPreview);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "exportForm";
-            this.Text = "exportForm";
+            this.Text = "Export files";
             this.ResumeLayout(false);
             this.PerformLayout();
 

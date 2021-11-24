@@ -222,7 +222,7 @@ namespace GTI_2A_EnglishProyect
             this.ClientSize = new System.Drawing.Size(821, 329);
             this.Controls.Add(this.groupBox2);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Create new product";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
