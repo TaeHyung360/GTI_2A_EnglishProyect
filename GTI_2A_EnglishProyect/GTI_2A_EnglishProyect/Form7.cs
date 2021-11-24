@@ -96,20 +96,22 @@ namespace GTI_2A_EnglishProyect
 
         private void dataCSV_CheckedChanged(object sender, EventArgs e)
         {
-            StringBuilder write = new StringBuilder();
-            foreach (Product product in productList.product)
-            {
-                write.AppendLine("Id: " + product.ID);
-                write.AppendLine("Name: " + product.NAME);
-                write.AppendLine("Plataform: " + product.PLATFORM);
-                write.AppendLine("Manufacturer: " + product.MANUFACTURER);
-                write.AppendLine("Stock: " + product.STOCK);
-                write.AppendLine("Price €: " + product.PRICE);
-                write.AppendLine("Description: " + product.DESCRIPTION);
-                write.AppendLine();
-            }
 
-            textBoxPreview.Text = write.ToString();
+            string message = "";
+            StringBuilder write = new StringBuilder();
+            
+                foreach (Product product in productList.product)
+                {
+                    message += product.ID + ", " + product.NAME
+                        + ", " + product.PLATFORM + ", " + product.MANUFACTURER + ", " +
+                        product.STOCK + ", " + product.PRICE + ", " + product.DESCRIPTION + ", ";
+
+                    
+                }
+                write.AppendLine(message);
+                textBoxPreview.Text = message;
+            
+
         }
     }
 }

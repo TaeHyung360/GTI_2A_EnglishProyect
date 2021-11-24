@@ -202,6 +202,7 @@ namespace GTI_2A_EnglishProyect
                 double price = Convert.ToDouble(product.PRICE);
                 double discountApplied = (price * discount) / 100;
                 double priceWithDiscount = price - discountApplied;
+                priceWithDiscount = Math.Round(priceWithDiscount, 2);
 
                 product.PRICE = priceWithDiscount.ToString();
                 listOfProducts.Items.Remove(product);

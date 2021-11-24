@@ -158,6 +158,10 @@ namespace GTI_2A_EnglishProyect
 
                 if (inpuntPositiveDecimal(value))
                 {
+                    if (value.Contains("."))
+                    {
+                        value = value.Replace(".", ",");
+                    }
                     price = value;
                 }
                 else

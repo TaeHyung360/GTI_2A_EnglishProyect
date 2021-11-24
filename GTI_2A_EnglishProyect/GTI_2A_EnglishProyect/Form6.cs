@@ -31,7 +31,7 @@ namespace GTI_2A_EnglishProyect
                     double discount = Convert.ToDouble(textBox1.Text);
                     if (discount >= 100 || discount <= 0)
                     {
-                        MessageBox.Show("The discount has to be greater than cero o smaller than a hundred", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+                        MessageBox.Show("The discount has to be greater than cero o smaller than a hundred", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
