@@ -184,7 +184,9 @@ namespace GTI_2A_EnglishProyect
                 MessageBox.Show("You must select a product", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        //===========================================================================================================
+        //apply discount
+        //===========================================================================================================
         private void applyDiscountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form6 applyDiscount = new Form6();
@@ -209,7 +211,9 @@ namespace GTI_2A_EnglishProyect
             File.WriteAllText(mainFileOfProducts, jsonData);
             initListBoxListOfProducts();
         }
-
+        //===========================================================================================================
+        //Export
+        //===========================================================================================================
         private void exportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             exportForm exportFileWindows = new exportForm();

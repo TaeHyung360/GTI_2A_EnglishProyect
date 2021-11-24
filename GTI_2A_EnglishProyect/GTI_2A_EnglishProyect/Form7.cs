@@ -26,11 +26,6 @@ namespace GTI_2A_EnglishProyect
             productList = JsonConvert.DeserializeObject<ProductList>(jsonPlainContent);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBoxPreview_TextChanged(object sender, EventArgs e)
         {
             textBoxPreview.ScrollBars = ScrollBars.Vertical;
@@ -109,17 +104,12 @@ namespace GTI_2A_EnglishProyect
                 write.AppendLine("Plataform: " + product.PLATFORM);
                 write.AppendLine("Manufacturer: " + product.MANUFACTURER);
                 write.AppendLine("Stock: " + product.STOCK);
-                write.AppendLine("Price (€): " + product.PRICE);
+                write.AppendLine("Price €: " + product.PRICE);
                 write.AppendLine("Description: " + product.DESCRIPTION);
                 write.AppendLine();
             }
 
             textBoxPreview.Text = write.ToString();
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
         }
     }
 }
